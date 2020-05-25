@@ -5,16 +5,20 @@
     <link rel="stylesheet" href="public/styles.css">
     <title>Hafizuddin Sharif</title>
   </head>
-  <body class="bg-gray-100">
-    <div class="p-2" id="navbar">
+  <body class="bg-gray-100 added-background">
+
+    <!-- NAVIGATION BAR -->
+    <div class="p-2 fixed w-full" id="navbar">
       <nav class="lg:flex rounded-lg flex-row-reverse bg-gray-500 p-3 text-white shadow-lg">
         <p class="px-2"><a href="#about-me">About Me</a></p>
         <p class="px-2">Technical Skills</p>
         <p class="px-2">Portfolio</p>
-        <p class="px-2">Contact Me</p>
+        <p class="px-2"><a href="#contact-me">Contact Me</a></p>
       </nav>
     </div>
-    <div class="text-center lg:flex py-20" id="introduction">
+
+    <!-- INTRODUCTION SECTION -->
+    <div class="text-center lg:flex py-40" id="introduction">
       <div class="p-10 inline-block lg:flex lg:m-auto bg-gray-300 rounded-lg shadow-lg">
         <div class="text-center">
           <img class="w-64 rounded-full object-contain inline-block lg:flex" src="src/my_pic.jpg" alt="My picture">
@@ -28,15 +32,33 @@
         </div>
       </div>
     </div>
+
+    <!-- ABOUT ME SECTION -->
     <div class="text-center lg:flex py-56 px-10" id="about-me">
       <div class="p-10 inline-block lg:flex lg:m-auto bg-gray-300 rounded-lg shadow-lg">
         <div class="">
           <h1 class="text-3xl text-gray-700 font-serif font-bold">About Me</h1>
-          <p class="block text-gray-700 text-xl">My name is Hafizuddin Sharif Bin Umar Sharif, a web developer based in Malaysia.
+          <p class="block text-gray-700 text-xl text-justify pt-10">My name is Hafizuddin Sharif Bin Umar Sharif, a web developer based in Malaysia.
             I am currently taking Computer Science course in University of Edinburgh.</p>
         </div>
-
       </div>
     </div>
+
+    <!-- CONTACT ME SECTION -->
+    <div class="text-center lg:flex py-56 px-10" id="contact-me">
+      <div class="p-10 inline-block lg:flex lg:m-auto bg-gray-300 rounded-lg shadow-lg w-full">
+        <div class="w-full">
+          <h1 class="text-3xl text-gray-700 font-serif font-bold">Contact Me</h1>
+          <div class="flex justify-around pt-10 w-full">
+            <img class="w-10" src="src/linkedin.svg" alt="linkedin logo">
+            <img class="w-10" src="src/github.svg" alt="github logo">
+            <img class="w-10" src="src/facebook.svg" alt="facebook logo">
+            <img class="w-10" src="src/instagram.svg" alt="instagram logo">
+            <img class="w-10" src="src/youtube.svg" alt="youtube logo">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
